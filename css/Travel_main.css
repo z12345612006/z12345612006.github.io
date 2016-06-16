@@ -2,12 +2,18 @@
 
 /* Base */
 html { font-family: "Ropa Sans", "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; font-size: 16px; line-height: 1.5; }
-body { background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); min-width: 960px; }
+body { background-image:url(/img/back.jpg); background-repeat:repeat;  min-width: 960px; }
 h1, h2, h3, p, ul { margin: 0; }
+h3{color:white; background-color:	#FF8000;border:3px #FF8000 dashed; width:200px;}
+
 ul { padding-left: 0; }
 ul li { list-style-type: none; }
 a { color: inherit; text-decoration: none; }
 img { vertical-align: middle; }
+
+
+.aside-menu{ background-color:white;  border:3px #FFD382 dashed; width:200px;text-align:center;}
+.aside-menu:hover{ background-color:#FFFF4F;  border:3px #FFD382 dashed;}
 .clearfix:before, .clearfix:after { content: " "; display: table; }
 .clearfix:after { clear: both; }
 .page-footer > .inner {
@@ -27,10 +33,10 @@ img { vertical-align: middle; }
 #map {
         height: 50%;
       }
-.container { margin-left: 90px; max-width: 85%; padding: 6em 0; }
+.container { margin-left: 90px; max-width: 80%; padding: 6em 0; }
 .right{
 	position: absolute;
-	margin-left: 950px;
+	margin-left: 900px;
 	z-index:10;/*硬幹,為了不跑出menu*/
 }
 .right.sticky {
@@ -167,7 +173,7 @@ img { vertical-align: middle; }
 
 /* デフォルトのスタイル */
 .page-header {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     position: absolute;
     width: 100%;
     min-width: 960px;
@@ -209,3 +215,16 @@ img { vertical-align: middle; }
 .primary-nav a:hover {
     background-color: rgb(240, 240, 240);
 }
+/*
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6&appId=1590284311294755";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-href="https://z12345612006.github.io/Travel_index.html" data-width="650" data-numposts="5"></div>
+
+*/
